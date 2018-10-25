@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ProfileApp</string>
+    <string name="name">Timothy Georgeson</string>
+    <string name="location">Location: </string>
+    <string name="college">College:</string>
+    <string name="auburn_al">Auburn, AL</string>
+    <string name="education">Education</string>
+    <string name="auburn_university">Auburn University</string>
+    <string name="major">Major:</string>
+    <string name="software_engineering">Software Engineering</string>
+    <string name="degree">Degree:</string>
+    <string name="bachelor_s">Bachelor\'s</string>
+    <string name="hobbies">Hobbies:</string>
+    <string name="piano">Piano</string>
+    <string name="guitar">Guitar</string>
+    <string name="sports">Sports</string>
+    <string name="imagedesc">Image Description</string>
+</resources>

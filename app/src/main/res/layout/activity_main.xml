@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--1. Name section using the parent Linear Layout vertical-->
+    <TextView
+        style="@style/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/name" />
+
+    <!--Extra textview is blank, just to make extra space-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/table_size" />
+
+    <!--2. Location section using Relative Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/location"
+            style="@style/Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location" />
+
+        <TextView
+            style="@style/Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/location"
+            android:text="@string/auburn_al" />
+
+    </RelativeLayout>
+
+    <!--3. Education section using Table Layout-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/education"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/subheader_size" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                style="@style/Education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="@string/college" />
+
+            <TextView
+                style="@style/Education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="@string/auburn_university" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/Education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="@string/major" />
+
+            <TextView
+                style="@style/Education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="@string/software_engineering" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/Education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="@string/degree" />
+
+            <TextView
+                style="@style/Education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="@string/bachelor_s" />
+        </TableRow>
+    </TableLayout>
+
+    <!--4. Hobbies using Linear Layout horizontal-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/hobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="@string/hobbies"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/subheader_size"/>
+
+        <TextView
+            style="@style/Hobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/piano"
+            android:textSize="@dimen/table_size" />
+
+        <TextView
+            style="@style/Hobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/guitar"
+            android:textSize="@dimen/table_size" />
+
+        <TextView
+            style="@style/Hobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/sports"
+            android:textSize="@dimen/table_size" />
+
+    </LinearLayout>
+
+    <!--5. Picture using Frame Layout-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/building"
+            android:contentDescription="@string/imagedesc" />
+
+    </FrameLayout>
+
+</LinearLayout>

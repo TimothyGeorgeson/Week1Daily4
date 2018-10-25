@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--Added custom styles for each of the 5 sections below-->
+
+    <style name="Name" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/header_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Location" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="android:textSize">@dimen/subheader_size</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="Education" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:textSize">@dimen/table_size</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+    <style name="Hobbies" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textSize">@dimen/table_size</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+</resources>
